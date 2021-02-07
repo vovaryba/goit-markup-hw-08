@@ -1,0 +1,46 @@
+// Кубик
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+// Шрифты
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+// Цвета главной страницы
+$primary-text-color: #757575;
+$secondary-text-color: #212121;
+$tertiary-text-color: #ffffff;
+$logo-color: #000000;
+$accent-color: #2196f3;
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #2f303a;
+$tertiary-bg-color: #f5f4fa;
+$border-header-color: #ececec;
+$content-hero-bg-color: #c4c4c4;
+$content-hero-gradient-color: rgba(47, 48, 58, 0.4);
+$hero-button-hover-bg-color: #188ce8;
+$work-text-bg-color: rgba(47, 48, 58, 0.8);
+$svg-icons-color: #afb1b8;
+$footer-contacts-color: rgba(255, 255, 255, 0.6);
+$footer-links-bg-color: rgba(255, 255, 255, 0.1);
+$footer-subscribe-form-border-color: rgba(255, 255, 255, 0.3);
+$backdrop-bg-color: rgba(0, 0, 0, 0.2);
+$modal-close-button-border-color: rgba(0, 0, 0, 0.1);
+$form-input-border-color: rgba(33, 33, 33, 0.2);
+$comment-placeholder-color: rgba(117, 117, 117, 0.5);
+// Цвета страницы Портфолио
+$border-projects-list-color: #eeeeee;
+$project-overlay-bg-color: rgba(33, 150, 243, 0.9);
+// Тени
+$button-shadow-color: rgba(0, 0, 0, 0.15);
+$team-card-first-shadow-color: rgba(0, 0, 0, 0.12);
+$team-card-second-shadow-color: rgba(0, 0, 0, 0.14);
+$team-card-third-shadow-color: rgba(0, 0, 0, 0.2);
+$subscribe-email-shadow-color: rgba(0, 0, 0, 0.15);
+$modal-first-shadow-color: rgba(0, 0, 0, 0.12);
+$modal-second-shadow-color: rgba(0, 0, 0, 0.14);
+$modal-third-shadow-color: rgba(0, 0, 0, 0.2);
+// Тени Портфолио
+$filter-hover-first-shadow-color: rgba(0, 0, 0, 0.1);
+$filter-hover-second-shadow-color: rgba(0, 0, 0, 0.08);
+$filter-hover-third-shadow-color: rgba(0, 0, 0, 0.12);
+$card-hover-first-shadow-color: rgba(0, 0, 0, 0.12);
+$card-hover-second-shadow-color: rgba(0, 0, 0, 0.06);
+$card-hover-third-shadow-color: rgba(0, 0, 0, 0.16);

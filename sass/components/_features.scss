@@ -1,0 +1,37 @@
+/** Особенности */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features__item {
+  width: 270px;
+}
+.rect-background {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+
+  background-color: $tertiary-bg-color;
+}
+.rect-background__icon {
+  width: 70px;
+  height: 70px;
+}
+.features__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $secondary-text-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.features__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}

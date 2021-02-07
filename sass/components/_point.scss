@@ -1,0 +1,21 @@
+/** Точечные стили */
+.underline {
+  text-decoration: underline;
+}
+.upcase {
+  text-transform: uppercase;
+}
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}

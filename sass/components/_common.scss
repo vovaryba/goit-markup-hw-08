@@ -1,0 +1,107 @@
+/** Общие стили */
+body {
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/** Кнопка */
+.button {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 0;
+  border-radius: 4px;
+  border: 0 solid transparent;
+
+  color: $tertiary-text-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px $button-shadow-color;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+/** Заглавие секции */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: $secondary-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+/** Список секции */
+.section-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/** Фото и картинки */
+.section-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/** Соц. сети */
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 32px;
+  margin-left: 32px;
+  padding-left: 0;
+}
+.social-links__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $svg-icons-color;
+  background-color: $tertiary-text-color;
+
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $tertiary-text-color;
+    background-color: $accent-color;
+  }
+}
+.social-links__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
+/** Заглавие соцсетей и подписки в футере*/
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: $tertiary-text-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}

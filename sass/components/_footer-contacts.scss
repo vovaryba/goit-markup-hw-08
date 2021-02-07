@@ -1,0 +1,33 @@
+/** Адрес и контакты */
+.footer-contacts {
+  font-style: normal;
+}
+.footer-contacts__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-contacts__address,
+.footer-contacts__mail-tel {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-contacts__address {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $tertiary-text-color;
+}
+.footer-contacts__mail-tel {
+  color: $footer-contacts-color;
+
+  transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
