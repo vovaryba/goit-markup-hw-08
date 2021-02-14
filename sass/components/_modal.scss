@@ -20,16 +20,19 @@
   opacity: 1;
   transition: opacity 250ms $cubic-bezier;
 
+  overflow-y: scroll;
+
   z-index: 2;
+
+  @media screen and (max-width: $mobile) {
+    padding: 93px 15px;
+  }
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
 
-  min-width: 528px;
-  min-height: 581px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-radius: 4px;
 
   background-color: $primary-bg-color;
@@ -39,7 +42,23 @@
     0px 2px 1px $modal-third-shadow-color;
 
   transition: transform 250ms $cubic-bezier;
+
+  @media screen and (min-width: $after-mobile) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
+// Определить почему высота модалки больше чем по макету
 .modal__close {
   position: absolute;
   top: 8px;
@@ -71,13 +90,19 @@
   }
 }
 .modal__title {
-  margin-top: 40px;
+  margin-top: 0px;
   margin-bottom: 12px;
+  margin-right: 40px;
+  margin-left: 40px;
   text-align: center;
 
   color: $secondary-text-color;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }

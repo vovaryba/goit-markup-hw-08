@@ -1,14 +1,14 @@
 /** Адрес и контакты */
+.logo-address {
+  @media screen and (max-width: $to-desktop) {
+    margin-bottom: 60px;
+  }
+}
 .footer-contacts {
   font-style: normal;
 }
-.footer-contacts__list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
 .footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .footer-contacts__address,
 .footer-contacts__mail-tel {

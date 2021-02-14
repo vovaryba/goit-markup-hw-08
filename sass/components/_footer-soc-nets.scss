@@ -1,10 +1,12 @@
 /** Соцсети */
 .join {
-  margin-left: 70px;
-}
-.social-links--dark {
-  width: 206px;
-  margin: 0;
+  @media screen and (max-width: $to-tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
 }
 .social-links__link--dark {
   color: $tertiary-text-color;

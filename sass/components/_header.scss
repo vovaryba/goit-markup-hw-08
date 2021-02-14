@@ -5,14 +5,10 @@
   left: 0;
 
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
   border-bottom: 1px solid $border-header-color;
 
   background-color: $primary-bg-color;
 
   z-index: 1;
-}
-.page-header__container {
-  display: flex;
-  align-items: center;
 }

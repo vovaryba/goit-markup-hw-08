@@ -1,11 +1,22 @@
 /** Работа */
 .work {
+  padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: $to-desktop) {
+    display: none;
+  }
 }
-.work__item {
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.work-list__item {
   position: relative;
+  width: calc((100% - 6 * 15px) / 3);
+  margin: 15px;
 }
-.work__text {
+.work-list__text {
   position: absolute;
   left: 0;
   bottom: 0;

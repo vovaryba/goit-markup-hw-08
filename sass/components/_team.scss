@@ -1,11 +1,23 @@
 /** Команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: $tertiary-bg-color;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-.team__item {
+.team-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.team-list__item {
   border-radius: 0px 0px 4px 4px;
 
   background-color: $primary-bg-color;
@@ -13,13 +25,29 @@
   box-shadow: 0px 1px 3px $team-card-first-shadow-color,
     0px 1px 1px $team-card-second-shadow-color,
     0px 2px 1px $team-card-third-shadow-color;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: $to-tablet) {
+      margin-bottom: 30px;
+    }
+  }
 }
-.team__content {
+.team-list__content {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
 }
-.team__member {
+.team-list__member {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -29,7 +57,7 @@
   font-size: 16px;
   line-height: 1.19;
 }
-.team__position {
+.team-list__position {
   margin-top: 0;
   margin-bottom: 16px;
 

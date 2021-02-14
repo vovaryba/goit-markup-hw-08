@@ -1,15 +1,21 @@
 /** Подписка */
 .subscribe {
-  margin-left: auto;
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
 }
 .subscribe__form {
-  display: flex;
-  width: 570px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $to-desktop) {
+    width: 450px;
+  }
 }
 .subscribe__email {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
   padding: 15px 18px;
   border: 1px solid $footer-subscribe-form-border-color;
   border-radius: 4px;
@@ -25,11 +31,23 @@
     font-size: 16px;
     line-height: 1.25;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
+
+  @media screen and (max-width: $to-desktop) {
+    margin-bottom: 20px;
+  }
 }
 .subscribe__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
 }
 .subscribe__icon {
   width: 24px;

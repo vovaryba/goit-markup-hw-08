@@ -1,24 +1,49 @@
 /** Клиенты */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.clients-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  color: $secondary-text-color;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-.clients__link {
+.clients-list {
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.clients-list__item {
+  @media screen and (max-width: $to-mobile) {
+    text-align: center;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: $to-mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+}
+.clients-list__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid currentColor;
   border-radius: 4px;
@@ -31,38 +56,46 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
 }
-.clients__logo-1 {
+.clients-list__logo-1 {
   width: 44px;
   height: 49px;
 
   fill: currentColor;
 }
-.clients__logo-2 {
+.clients-list__logo-2 {
   width: 40px;
   height: 52px;
 
   fill: currentColor;
 }
-.clients__logo-3 {
+.clients-list__logo-3 {
   width: 41px;
   height: 43px;
 
   fill: currentColor;
 }
-.clients__logo-4 {
+.clients-list__logo-4 {
   width: 80px;
   height: 42px;
 
   fill: currentColor;
 }
-.clients__logo-5 {
+.clients-list__logo-5 {
   width: 59px;
   height: 47px;
 
   fill: currentColor;
 }
-.clients__logo-6 {
+.clients-list__logo-6 {
   width: 89px;
   height: 45px;
 

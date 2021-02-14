@@ -1,0 +1,27 @@
+/** Соцсети */
+.social-nets {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.social-nets__item {
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid $social-nets-vertical-border-color;
+  }
+}
+.social-nets__link {
+  color: $accent-color;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+  letter-spacing: 0.02em;
+}

@@ -7,6 +7,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 a {
   text-decoration: none;
@@ -38,19 +42,24 @@ ul {
 /** Заглавие секции */
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 
   color: $secondary-text-color;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 /** Список секции */
 .section-list {
-  display: flex;
-  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -60,13 +69,16 @@ ul {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 /** Соц. сети */
 .social-links {
   display: flex;
   justify-content: space-between;
-  margin-right: 32px;
-  margin-left: 32px;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 0;
 }
 .social-links__link {
