@@ -1,12 +1,15 @@
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './base/fonts';
 @import './base/normalize';
 @import './components/common';
 @import './components/point';
 @import './components/header';
-@import './components/logo';
 @import './components/navigation';
+@import './components/logo';
+@import './components/menu';
 @import './components/contacts';
+@import './components/soc-nets';
 @import './components/hero';
 @import './components/features';
 @import './components/work';
