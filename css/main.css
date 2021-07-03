@@ -1079,6 +1079,18 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  .features-list__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .features-list {
     display: -webkit-box;
     display: -ms-flexbox;
