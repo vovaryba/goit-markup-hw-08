@@ -18,6 +18,11 @@ a {
 ul {
   list-style: none;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /** Кнопка */
 .button {
   min-width: 200px;
@@ -66,9 +71,6 @@ ul {
 }
 /** Фото и картинки */
 .section-photo {
-  display: block;
-  max-width: 100%;
-  height: auto;
   margin-right: auto;
   margin-left: auto;
 }
